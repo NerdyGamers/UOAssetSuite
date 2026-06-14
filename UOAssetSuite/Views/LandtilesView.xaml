@@ -1,0 +1,21 @@
+<UserControl x:Class="UOAssetSuite.Views.LandtilesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <ListView x:Name="LandtilesList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Index" DisplayMemberBinding="{Binding Index}" Width="80"/>
+                    <GridViewColumn Header="Texture" DisplayMemberBinding="{Binding TextureID}" Width="80"/>
+                    <GridViewColumn Header="Preview" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Image}" Width="64" Height="64"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
