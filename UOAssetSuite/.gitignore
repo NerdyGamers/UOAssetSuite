@@ -1,0 +1,10 @@
+# Ignore bin and obj folders
+bin/
+obj/
+
+# User files
+*.user
+*.suo
+
+# NuGet
+packages/
